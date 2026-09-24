@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.1.2
+  version: 3.2.0
   python_min: '3.11'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphrag-input/graphrag_input-${{ version }}.tar.gz
-  sha256: 519fbe9563d890ec25c336d9372a06e63ab8a966cf19375cc733871724ffebf1
+  sha256: 51c37438aafe919f6c56b71a230a0aa8bb623333fc4062d977bdf695150b78d5
 
 build:
   number: 0
@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.14
-    - graphrag-common ==3.1.2
-    - graphrag-storage ==3.1.2
+    - graphrag-common ==3.2.0
+    - graphrag-storage ==3.2.0
     - pydantic >=2.13,<3.dev0
     - markitdown >=0.1.7,<0.2.dev0
     - pyarrow >=14.0.0
